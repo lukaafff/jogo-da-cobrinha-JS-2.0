@@ -4,15 +4,25 @@ body{
     padding-top: 60px;
     display: flex;
     justify-content: center;
-    background-color: brown;
+    background: linear-gradient(
+        90deg,
+        rgba(255, 133, 133, 1) 0%,
+        rgba(227, 84, 95, 1) 100%
+    );
     font-family: 'Oxanium', Arial;
 }
 
 #pontuacaobox{
     position: absolute;
-    top: 90px;
+    top: 30px;
     right: 530px;
     color: white;
     font-size: 25px;
     font-weight: bold;
+}
+
+#tela{
+    border-width: 15px;
+    border-style: solid;
+    border-color: black;
 }
