@@ -7,11 +7,10 @@ window.onload = function(){
     const velocidade = 1; //qunatas casas a cobrinha anda 
 
     var velocidadeX = velocidadeY =0;
-    var posicaoX = 11; //posição onde inicia a cobrinha
-    var posicaoY = 14; //posição onde inicia a cobrinha
     var tamanhoPeca = 30;
     var quantidadePeca = 20;
-    var macaX = macaY = 15; //posição inicial da maça
+    var posicaoX = posicaoY = Math.floor(Math.random()*quantidadePeca); //posição onde inicia a cobrinha
+    var macaX = macaY = Math.floor(Math.random()*quantidadePeca); //posição inicial da maça
 
     var pontuacao = 0;
 
@@ -22,22 +21,6 @@ window.onload = function(){
         pontuacaobox.innerHTML = "Pontuação: " + pontuacao; //pontução começa zerada
         posicaoX += velocidadeX; //cobrinha começa parada
         posicaoY += velocidadeY; //cobrinha começa parada
-
-/*
-        //if para passar de um lado para o outro
-        if (posicaoX < 0){ //quando for pra esquerda aparece na direita
-            posicaoX = quantidadePeca - 1;
-        }
-        if (posicaoX > quantidadePeca - 1){ //quando for pra direita aparece na esquerda
-            posicaoX = 0;
-        }
-         if (posicaoY < 0){  //quando for pra cima aparece em baixo
-            posicaoY = quantidadePeca - 1;
-         }
-         if (posicaoY > quantidadePeca - 1){ //quando for pra baixo aparece em cima
-            posicaoY = 0;
-         }
-*/
         
         //tela
         ctx.fillStyle = "#ff8585"; //estilo de preechimento
@@ -82,6 +65,7 @@ window.onload = function(){
             //pontuação
             pontuacao += 1; //a cada maça pegada aumenta +1 ponto
         }
+        
     }
         //controle da cobrinha
         function keyPush(event){
