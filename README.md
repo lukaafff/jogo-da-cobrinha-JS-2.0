@@ -5,7 +5,7 @@
 
 ### 📚 Sobre
 
-Pequeno projeto do famoso jogo da cobrinha.
+Esse projeto é uma atualização do projeto do Jogo da cobrinha. Aqui resolvi implementar melhorias como: pontuação, colisão, estilo da página para deixar mais atraente e mudanças no código, deixando ele mais legível e comentado.
 
 <hr>
 
