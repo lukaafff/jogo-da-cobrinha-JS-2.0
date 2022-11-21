@@ -13,10 +13,13 @@ window.onload = function(){
     var quantidadePeca = 20;
     var macaX = macaY = 15; //posição inicial da maça
 
+    var pontuacao = 0;
+
     var rastro = []; //o reastro começa com a array vazia, pois não tem nenhum elemento
     calda = 5; //calda da cobrinha começa com tamanho 5
 
     function jogo (){
+        pontuacaobox.innerHTML = "Pontuação: " + pontuacao;
         posicaoX += velocidadeX; //cobrinha começa parada
         posicaoY += velocidadeY; //cobrinha começa parada
 
@@ -33,7 +36,6 @@ window.onload = function(){
             posicaoY = 0;
          }
     
-
         //tela
         ctx.fillStyle = "black"; //estilo de preechimento
         ctx.fillRect(0,0, tela.width, tela.height); //forma um retângulo e pinta toda a tela
@@ -49,6 +51,7 @@ window.onload = function(){
             if (rastro[i].x == posicaoX && rastro[i].y == posicaoY){ //se a posição do rastro for igual a posição da cobrinha 
                 velocidadeX = velocidadeY = 0; //para a cobrinha
                 calda = 2;
+                pontuacao = 0;
             }
         }
         //cobrinha andar
@@ -62,6 +65,8 @@ window.onload = function(){
             calda ++; //colocar mais um elemento na calda
             macaX = Math.floor(Math.random()*quantidadePeca); //reposiciona a maçã
             macaY = Math.floor(Math.random()*quantidadePeca); //reposiciona a maçã
+            //pontuação
+            pontuacao += 1;
         }
     }
         //controle da cobrinha
@@ -89,5 +94,4 @@ window.onload = function(){
                 break;
         }
     }
-    
 }

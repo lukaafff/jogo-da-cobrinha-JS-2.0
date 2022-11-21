@@ -1,5 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Oxanium:wght@200;300;400;500;600;700;800&family=Poppins:wght@600&display=swap');
+
 body{
     padding-top: 60px;
     display: flex;
-   justify-content: center;
+    justify-content: center;
+    background-color: brown;
+    font-family: 'Oxanium', Arial;
+}
+
+#pontuacaobox{
+    position: absolute;
+    top: 90px;
+    right: 530px;
+    color: white;
+    font-size: 25px;
+    font-weight: bold;
 }
