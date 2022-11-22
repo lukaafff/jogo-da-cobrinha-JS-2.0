@@ -6,16 +6,22 @@ window.onload = function(){
     
     const velocidade = 1; //qunatas casas a cobrinha anda 
 
-    var velocidadeX = velocidadeY =0;
+    var velocidadeX = velocidadeY = 0;
     var tamanhoPeca = 30;
     var quantidadePeca = 20;
     var posicaoX = posicaoY = Math.floor(Math.random()*quantidadePeca); //posição onde inicia a cobrinha
     var macaX = macaY = Math.floor(Math.random()*quantidadePeca); //posição inicial da maça
-
     var pontuacao = 0;
 
     var rastro = []; //o reastro começa com a array vazia, pois não tem nenhum elemento
     calda = 2; //calda da cobrinha começa com tamanho 5
+
+    //imagem das teclas
+    function teclas (){
+        var img = document.createElement('IMG');
+        img.src = "como jogar.png";
+        document.getElementById('comojogarI');
+    }   
 
     function jogo (){
         pontuacaobox.innerHTML = "Pontuação: " + pontuacao; //pontução começa zerada

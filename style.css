@@ -26,3 +26,20 @@ body{
     border-style: solid;
     border-color: black;
 }
+
+#comojogarI img{
+    height: 140px;
+    position: absolute;
+    left: 10px;
+    bottom: 250px;
+}
+
+.teclas {
+    position: absolute;
+    left: 130px;
+    bottom: 380px;
+    padding: 10px;
+    background-color: #000;
+    border-radius: 20px;
+    color: #fff;
+}
