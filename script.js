@@ -30,7 +30,7 @@ window.onload = function(){
         
         //tela
         ctx.fillStyle = "#ff8585"; //estilo de preechimento
-        ctx.fillRect(0,0, tela.width, tela.height); //forma um retângulo e pinta toda a tela
+        ctx.fillRect(0,0, tela.width, tela.height); //forma um retângulo e pinta toda a tela 
 
         //maça
         ctx.fillStyle = "#b53535"; //estilo de preechimento
@@ -66,8 +66,8 @@ window.onload = function(){
             calda ++; //colocar mais um elemento na calda
             macaX = Math.floor(Math.random()*quantidadePeca); //reposiciona a maçã
             macaY = Math.floor(Math.random()*quantidadePeca); //reposiciona a maçã
-            macaX !== rastro;
-            macaY !== rastro;
+            macaX !== calda;
+            macaY !== calda;
             //pontuação
             pontuacao += 1; //a cada maça pegada aumenta +1 ponto
         }
