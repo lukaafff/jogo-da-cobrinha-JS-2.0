@@ -66,8 +66,6 @@ window.onload = function(){
             calda ++; //colocar mais um elemento na calda
             macaX = Math.floor(Math.random()*quantidadePeca); //reposiciona a maçã
             macaY = Math.floor(Math.random()*quantidadePeca); //reposiciona a maçã
-            macaX !== calda;
-            macaY !== calda;
             //pontuação
             pontuacao += 1; //a cada maça pegada aumenta +1 ponto
         }

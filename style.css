@@ -1,9 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Oxanium:wght@200;300;400;500;600;700;800&family=Poppins:wght@600&display=swap');
 
+html, body {
+    overflow: hidden;
+   }
+
 body{
     padding-top: 60px;
-    display: flex;
-    justify-content: center;
     background: linear-gradient(
         90deg,
         rgba(255, 133, 133, 1) 0%,
@@ -12,10 +14,18 @@ body{
     font-family: 'Oxanium', Arial;
 }
 
-#pontuacaobox{
+.container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pont {
     position: absolute;
-    top: 30px;
-    right: 530px;
+    top: 40px;
+    padding-left: 470px;
+    display: flex;
     color: white;
     font-size: 25px;
     font-weight: bold;
@@ -27,19 +37,11 @@ body{
     border-color: black;
 }
 
-#comojogarI img{
+#comojogarI img {
     height: 140px;
-    position: absolute;
-    left: 10px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     bottom: 250px;
-}
-
-.teclas {
-    position: absolute;
-    left: 130px;
-    bottom: 380px;
-    padding: 10px;
-    background-color: #000;
-    border-radius: 20px;
-    color: #fff;
 }
